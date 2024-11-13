@@ -1,17 +1,20 @@
-import { useState, useEffect } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-components';
+import { useCallback } from 'react';
+import { StyleSheet, View, type ViewStyle } from 'react-native';
+import { Button, styleType } from 'react-native-components';
 
 export default function App() {
-  const [result, setResult] = useState<number | undefined>();
 
-  useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  const onPress = useCallback(() => {
+    console.log("pressed")
+  }, [])
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button
+        text={'tap button'}
+        onPress={onPress}
+        style={[styles.button]}
+      />
     </View>
   );
 }
@@ -27,4 +30,13 @@ const styles = StyleSheet.create({
     height: 60,
     marginVertical: 20,
   },
+  button: styleType<ViewStyle>({
+    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderColor: 'gray',
+    borderRadius: 8,
+    borderWidth: 1,
+    padding: 16,
+  }),
 });

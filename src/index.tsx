@@ -1,3 +1,3 @@
-export function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
-}
+export { styleType } from "./components/utils/styles"
+export { Button } from "./components/Button"
+export { Spacer, SpacerLine } from "./components/Spacer"
