@@ -19,6 +19,31 @@ import { multiply } from 'react-native-components';
 const result = await multiply(3, 7);
 ```
 
+## Development
+
+Get started with the project:
+
+```shell
+$ yarn
+```
+
+Run the example app on iOS:
+
+```
+$ yarn example ios
+```
+
+Run the example app on Android:
+
+```
+$ yarn example android
+```
+
+Run the example app on Web:
+
+```
+$ yarn example web
+```
 
 ## Contributing
 
