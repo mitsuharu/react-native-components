@@ -1,7 +1,7 @@
 {
   "name": "react-native-components",
   "version": "0.1.0",
-  "description": "React Native module that builds basic componets",
+  "description": "React Native module that builds basic components",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
