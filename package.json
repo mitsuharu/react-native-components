@@ -1,5 +1,5 @@
 {
-  "name": "react-native-components",
+  "name": "@mitsuharu/react-native-components",
   "version": "0.1.0",
   "description": "React Native module that builds basic components",
   "source": "./src/index.tsx",
@@ -61,7 +61,7 @@
   },
   "homepage": "https://github.com/mitsuharu/react-native-components#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
