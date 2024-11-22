@@ -11937,9 +11937,20 @@ __metadata:
     react-dom: "npm:18.3.1"
     react-native: "npm:0.76.2"
     react-native-builder-bob: "npm:^0.31.0"
+    react-native-safe-area-context: "npm:^4.14.0"
     react-native-web: "npm:~0.19.13"
   languageName: unknown
   linkType: soft
+
+"react-native-safe-area-context@npm:^4.14.0":
+  version: 4.14.0
+  resolution: "react-native-safe-area-context@npm:4.14.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/70d71c5ec301fe811a1b3ca78555fdf3e845731177bc2ef72fb5e5d01fa97e9e14259114fe8c5366d91eceb57272887e19323d9355453353b82b2452c716a624
+  languageName: node
+  linkType: hard
 
 "react-native-web@npm:~0.19.13":
   version: 0.19.13

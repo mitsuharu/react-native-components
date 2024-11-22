@@ -15,7 +15,7 @@ import { styleType } from '../utils/styles'
 const AccessorySize: Size = { width: 20, height: 20 }
 
 type ContentProps = Partial<{ title: string; children: ReactNode }>
-type AccessoryProps = Partial<{ accessoryView: ReactNode }>
+type AccessoryProps = Partial<{ AccessoryView: React.FC<any> }>
 
 export type Props = ContentProps &
   AccessoryProps & {
@@ -47,7 +47,7 @@ const Component: React.FC<Props> = ({
   titleStyle,
   subtitleStyle,
   isRowDirection,
-  accessoryView,
+  AccessoryView,
   inactive,
 }) => {
   return (
@@ -72,7 +72,7 @@ const Component: React.FC<Props> = ({
             )}
           </View>
         )}
-        {!!accessoryView && accessoryView}
+        {!!AccessoryView && <AccessoryView />}
       </View>
     </Button>
   )
@@ -120,50 +120,3 @@ const styles = StyleSheet.create({
     paddingRight: 6,
   }),
 })
-
-// const useStyles = makeStyles(useColorScheme, (colorScheme) => {
-//   const styles = StyleSheet.create({
-// container: styleType<ViewStyle>({
-//   minHeight: Math.max(
-//     44,
-//     AccessorySize.height + contentInset.top + contentInset.bottom,
-//   ),
-//   backgroundColor: COLOR(colorScheme).BACKGROUND.PRIMARY,
-//   justifyContent: 'center',
-// }),
-// row: styleType<ViewStyle>({
-//   alignItems: 'center',
-//   justifyContent: 'center',
-//   flexDirection: 'row',
-//   paddingTop: contentInset.top,
-//   paddingBottom: contentInset.bottom,
-//   paddingLeft: contentInset.left,
-//   paddingRight: contentInset.right,
-// }),
-// innerColumn: styleType<ViewStyle>({
-//   flex: 1,
-//   flexDirection: 'column',
-// }),
-// innerRow: styleType<ViewStyle>({
-//   flex: 1,
-//   flexDirection: 'row',
-//   justifyContent: 'space-between',
-//   alignItems: 'center',
-// }),
-// accessoryStyle: styleType<TextStyle>({
-//   color: COLOR(colorScheme).TEXT.SECONDARY,
-// }),
-// text: styleType<TextStyle>({
-//   color: COLOR(colorScheme).TEXT.PRIMARY,
-//   fontSize: 15,
-//   lineHeight: 22,
-// }),
-// subtitle: styleType<TextStyle>({
-//   color: COLOR(colorScheme).TEXT.SECONDARY,
-//   fontSize: 13,
-//   lineHeight: 19,
-//   paddingRight: 6,
-// }),
-//   })
-//   return styles
-// })
