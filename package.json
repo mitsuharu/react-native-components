@@ -1,6 +1,6 @@
 {
   "name": "@mitsuharu/react-native-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Native module that builds basic components",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -137,7 +137,8 @@
           "singleQuote": true,
           "tabWidth": 2,
           "trailingComma": "es5",
-          "useTabs": false
+          "useTabs": false,
+          "semi": false
         }
       ]
     }
@@ -151,7 +152,8 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "es5",
-    "useTabs": false
+    "useTabs": false,
+    "semi": false
   },
   "react-native-builder-bob": {
     "source": "src",
