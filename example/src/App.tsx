@@ -1,22 +1,17 @@
-import { useCallback } from 'react';
-import { StyleSheet, View, type ViewStyle } from 'react-native';
-import { Button, styleType } from '@mitsuharu/react-native-components';
+import { useCallback } from 'react'
+import { StyleSheet, View, type ViewStyle } from 'react-native'
+import { Button, styleType } from '@mitsuharu/react-native-components'
 
 export default function App() {
-
   const onPress = useCallback(() => {
-    console.log("pressed")
+    console.log('pressed')
   }, [])
 
   return (
     <View style={styles.container}>
-      <Button
-        text={'tap button'}
-        onPress={onPress}
-        style={[styles.button]}
-      />
+      <Button text={'tap button'} onPress={onPress} style={[styles.button]} />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -39,4 +34,4 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 16,
   }),
-});
+})

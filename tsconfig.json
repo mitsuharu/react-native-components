@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@mitsuharu/react-native-components": ["./src/index"]
+      "@mitsuharu/react-native-components": ["./src/index"],
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

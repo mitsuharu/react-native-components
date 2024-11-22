@@ -1,3 +1,4 @@
-export { styleType } from "./components/utils/styles"
-export { Button } from "./components/Button"
-export { Spacer, SpacerLine } from "./components/Spacer"
+export * from './components/utils/styles'
+export * from './components/Button'
+export * from './components/Spacer'
+export * from './components/List'
