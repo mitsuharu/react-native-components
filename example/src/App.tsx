@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { StyleSheet, View, type ViewStyle } from 'react-native';
-import { Button, styleType } from 'react-native-components';
+import { Button, styleType } from '@mitsuharu/react-native-components';
 
 export default function App() {
 
