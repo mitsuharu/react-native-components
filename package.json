@@ -1,6 +1,6 @@
 {
   "name": "@mitsuharu/react-native-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Native module that builds basic components",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
