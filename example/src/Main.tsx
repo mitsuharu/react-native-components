@@ -36,10 +36,10 @@ const AccessoryView: React.FC = () => {
     Alert.alert('Alert Title', 'My Alert Msg', [
       {
         text: 'Cancel',
-        onPress: () => console.log('Cancel Pressed'),
+        onPress: () => console.log('alert Cancel'),
         style: 'cancel',
       },
-      { text: 'OK', onPress: () => console.log('OK Pressed') },
+      { text: 'OK', onPress: () => console.log('alert OK') },
     ])
   }, [])
 
@@ -53,7 +53,9 @@ const AccessoryView: React.FC = () => {
 }
 
 const Container: React.FC<Props> = (props) => {
-  const onPress = useCallback(() => {}, [])
+  const onPress = useCallback(() => {
+    console.log('Pressed')
+  }, [])
 
   return (
     <Component
